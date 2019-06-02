@@ -1,4 +1,4 @@
-# HTMLPortalElement example in React
+# HTMLPortalElement example in React (POC)
 
 HTMLPortalElement is a draft. Documentation here: 
 
@@ -8,6 +8,12 @@ HTMLPortalElement is a draft. Documentation here:
 
 * https://aralroca.github.io/HTMLPortalElement-react-example/
 
-To see correctly the demo, be sure to have Chrome Canary with this flag actived:
+![portal](./portal.gif "Portal example")
+
+
+
+To see correctly the demo, be sure to have Chrome Canary with this flag actived: 
+
+![portal-flag](./portal-flag.png "Portal Flag")
 
 

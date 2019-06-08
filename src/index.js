@@ -1,13 +1,13 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { render } from 'react-dom';
 
 import './style.css';
 
 function PortalExample() {
-  const portal = useRef()
   const [classList, setClassList] = useState(['portal'])
   const className = classList.join(' ')
 
+  // Fade in effect loading the portal
   useEffect(() => {
     const fadein = setTimeout(_ =>
      setClassList(list => [...list, 'fade-in']), 1000);
@@ -23,9 +23,8 @@ function PortalExample() {
     <portal
       src="https://www.aralroca.com"
       className={className}
-      ref={portal}
       onClick={() => setClassList(list => [...list, 'portal-reveal'])}
-      onTransitionEnd={(e) => e.propertyName === 'transform' && portal.current.activate()}
+      onTransitionEnd={(e) => e.propertyName === 'transform' && e.target.activate()}
     />
   );
 }

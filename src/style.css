@@ -10,8 +10,6 @@ body {
   opacity: 0;
   transition:
     transform 0.4s,
-    bottom 0.7s,
-    left 0.7s,
     opacity 1.0s;
   box-shadow: 0 0 20px 10px #999;
   transform: scale(0.4);
@@ -27,4 +25,3 @@ body {
 portal.fade-in {
   opacity: 1.0;
 }
-
